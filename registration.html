@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="registration.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	<style>
+		h1 {
+			text-align: center;
+			font-style: italic;
+			font-weight: bold;
+			animation-name: anim;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+			transition: 0.5s;
+		}
+
+		.form {
+			margin: auto;
+			width: fit-content;
+			border: 3px solid #73AD21;
+			padding: 10px;
+			background-color: rgb(141, 177, 209);
+			border-radius: 10px;
+			color: black;
+			text-align: center;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			
+		}
+
+		@keyframes anim {
+			0% {
+				background-color: rgb(145, 134, 134);
+			}
+
+			25% {
+				background-color: rgb(211, 211, 160);
+			}
+
+			50% {
+				background-color: rgb(164, 164, 167);
+			}
+
+			100% {
+				background-color: rgb(166, 233, 166);
+			}
+		}
+	</style>
+</head>
+</head>
+
+<body>
+	<pre>
+	<h1>JAVASCRIPT FORM VALIDATION</h1>
+	<div class="form">
+
+<form name='frm' onSubmit="return formValidation()" >
+<input type="text" name="username" placeholder="Name" minlength="5" size="40"/>
+
+<input type="email" name="email" placeholder="Email-id" size="40"/>
+
+<input type="password" name="passid" placeholder="Password" minlength=8 size="40"/>
+
+<input type="password" name="confirm_pass" placeholder="Retype Password" minlength="8" size="40"/>
+
+<input type="date" name="dob" placeholder="DOB"/>       <input type="tel" mixlength="10" name="phone" placeholder="Phone Number"/>
+
+
+<button type="submit" class="btn btn-primary">Submit</button>  <button type="reset" class="btn btn-primary">Reset</button>	
+
+</div>
+</form>
+
+</pre>
+</body>
+
+</html>
